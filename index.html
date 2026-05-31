@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kelvin Ekpe Essien | Senior Full-Stack Engineer</title>
+    <title>Kelvin Ekpe Essien | Principal Engineer & Security Researcher</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -14,11 +14,13 @@
             theme: {
                 extend: {
                     colors: {
-                        premium: {
-                            bg: '#050814',
-                            card: '#0c1125',
-                            gold: '#D4AF37',
-                            glow: 'rgba(212, 175, 55, 0.15)'
+                        cyber: {
+                            bg: '#03050d',
+                            panel: '#090d22',
+                            neonGreen: '#00ff66',
+                            neonBlue: '#00bcff',
+                            gold: '#E5A93C',
+                            border: '#141b3a'
                         }
                     }
                 }
@@ -26,97 +28,286 @@
         }
     </script>
     <style>
-        /* Immersive background glow elements */
-        .glow-overlay {
-            background: radial-gradient(600px circle at var(--mouse-x, 0px) var(--mouse-y, 0px), rgba(212, 175, 55, 0.08), transparent 40%);
+        /* Immersive glassmorphism layer styles */
+        .cyber-panel-glow {
+            box-shadow: 0 0 25px -5px rgba(0, 188, 255, 0.05);
         }
-        .ambient-light {
-            background: radial-gradient(circle at 50% 30%, rgba(59, 130, 246, 0.12), transparent 60%);
+        .spotlight-effect {
+            background: radial-gradient(800px circle at var(--mouse-x, 0px) var(--mouse-y, 0px), rgba(0, 255, 102, 0.05), transparent 40%);
         }
+        /* Custom scrollbar elimination for native sliding viewports */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
 </head>
-<body class="bg-premium-bg text-gray-100 font-sans antialiased selection:bg-premium-gold selection:text-black overflow-x-hidden">
+<body class="bg-cyber-bg text-gray-200 font-sans antialiased selection:bg-cyber-neonGreen selection:text-black overflow-x-hidden">
 
-    <div class="absolute inset-0 ambient-light pointer-events-none z-0 h-[1000px]"></div>
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[800px] bg-[radial-gradient(circle_at_center,rgba(0,188,255,0.06),transparent_65%)] pointer-events-none z-0"></div>
 
-    <header class="sticky top-0 z-50 bg-premium-bg/70 backdrop-blur-xl border-b border-gray-900/60">
-        <div class="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="#" class="text-xl font-black tracking-widest text-white">
-                KELVIN<span class="text-premium-gold">.</span>
-            </a>
-            <span class="text-xs font-mono bg-premium-card border border-gray-800 px-3 py-1 rounded-full text-gray-400">
-                10 YR PRO
-            </span>
+    <header class="sticky top-0 z-50 bg-cyber-bg/70 backdrop-blur-2xl border-b border-cyber-border/60">
+        <div class="max-w-6xl mx-auto px-6 h-24 flex items-center justify-between">
+            <div class="flex flex-col">
+                <span class="text-lg font-black tracking-widest text-white">ESSIEN<span class="text-cyber-neonGreen">_SEC</span></span>
+                <span class="text-[9px] font-mono text-gray-500 tracking-wider">LOC: 0x7F000001 // CALABAR_NGR</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-mono bg-emerald-950/40 border border-emerald-500/30 text-emerald-400">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> SYSTEM_ONLINE
+                </span>
+                <a href="mailto:kelvinessien27@gmail.com" class="text-xs font-mono font-bold bg-cyber-panel border border-cyber-border px-4 py-2.5 rounded text-cyber-neonBlue hover:border-cyber-neonGreen transition duration-300">
+                    CONNECT_
+                </a>
+            </div>
         </div>
     </header>
 
-    <section class="relative min-h-[80vh] flex items-center px-6 z-10">
-        <div class="max-w-3xl mx-auto text-center space-y-6">
-            <div class="hero-reveal inline-flex items-center gap-2 px-3 py-1 bg-yellow-950/40 border border-premium-gold/30 rounded-full text-[10px] text-premium-gold font-bold uppercase tracking-wider">
-                👑 Elite Architecture Portfolio
+    <section class="relative min-h-[90vh] flex items-center px-6 z-10">
+        <div class="max-w-4xl mx-auto w-full space-y-8">
+            <div class="space-y-4">
+                <div class="reveal-node inline-flex items-center gap-2 px-3 py-1 bg-blue-950/30 border border-cyber-neonBlue/30 rounded text-[10px] text-cyber-neonBlue font-mono tracking-widest uppercase">
+                    ⚡ ARCHITECT // RESEARCHER // PRODIGY AT 25
+                </div>
+                <h1 class="reveal-node text-5xl sm:text-7xl lg:text-8xl font-black tracking-tighter text-white leading-none">
+                    Kelvin Ekpe Essien
+                </h1>
+                <p class="reveal-node text-xl sm:text-2xl font-bold font-mono tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyber-neonGreen via-cyber-neonBlue to-purple-400">
+                    Advanced AI Developer & Elite Security Engineer
+                </p>
             </div>
-            <h1 class="hero-reveal text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-none">
-                Kelvin Ekpe Essien
-            </h1>
-            <p class="hero-reveal text-lg sm:text-xl font-medium bg-gradient-to-r from-premium-gold to-yellow-200 bg-clip-text text-transparent">
-                Senior Full-Stack Engineer & Software Architect
+
+            <p class="reveal-node text-gray-400 max-w-2xl text-sm sm:text-base leading-relaxed font-mono">
+                A 25-year-old software vanguard who began building core system logic at age 15. A decade of deep domain engineering specializing in high-concurrency cloud arrays, artificial intelligence data modeling, and low-level kernel vulnerability analysis.
             </p>
-            <p class="hero-reveal text-gray-400 max-w-xl mx-auto text-sm sm:text-base leading-relaxed">
-                Specializing in ultra-performant interfaces, secure web routing arrays, and cloud system automations.
-            </p>
-            <div class="hero-reveal pt-4">
-                <a href="mailto:kelvinessien27@gmail.com" class="inline-block bg-premium-gold text-black font-black text-xs uppercase tracking-widest px-6 py-3.5 rounded-lg shadow-lg shadow-yellow-500/10 hover:bg-yellow-500 transition">
-                    Initialize Contact Brief
+
+            <div class="reveal-node pt-4 flex flex-wrap gap-4 font-mono text-xs">
+                <a href="#core-matrix" class="px-6 py-4 bg-cyber-neonGreen text-black font-black uppercase tracking-wider rounded shadow-lg shadow-emerald-500/10 hover:bg-emerald-400 transition">
+                    Analyze Capabilities Matrix
+                </a>
+                <a href="mailto:kelvinessien27@gmail.com" class="px-6 py-4 bg-cyber-panel border border-cyber-border text-white font-bold rounded hover:bg-gray-900 transition">
+                    Request Secure Consultation
                 </a>
             </div>
         </div>
     </section>
 
-    <main class="max-w-4xl mx-auto px-6 space-y-28 pb-24 relative z-10">
+    <main class="max-w-6xl mx-auto px-6 space-y-36 pb-32 relative z-10">
 
-        <section class="grid grid-cols-2 sm:grid-cols-4 gap-4 border-y border-gray-900 py-10 text-center">
+        <section class="grid grid-cols-2 md:grid-cols-4 gap-6 border-y border-cyber-border py-12 text-center font-mono">
             <div>
-                <div class="text-3xl font-black text-white">10+</div>
-                <div class="text-[10px] text-gray-500 uppercase tracking-widest mt-1">Years Experience</div>
+                <div class="text-4xl font-black text-white text-cyber-neonGreen">10 Yrs</div>
+                <div class="text-[10px] text-gray-500 uppercase tracking-widest mt-2">Active Engineering</div>
             </div>
             <div>
-                <div class="text-3xl font-black text-white">5+</div>
-                <div class="text-[10px] text-gray-500 uppercase tracking-widest mt-1">High-End Certs</div>
+                <div class="text-4xl font-black text-white text-cyber-neonBlue">AGE_25</div>
+                <div class="text-[10px] text-gray-500 uppercase tracking-widest mt-2">Prodigy Track Timeline</div>
             </div>
             <div>
-                <div class="text-3xl font-black text-white">99.9%</div>
-                <div class="text-[10px] text-gray-500 uppercase tracking-widest mt-1">Uptime Focus</div>
+                <div class="text-4xl font-black text-white text-purple-400">8+ CORE</div>
+                <div class="text-[10px] text-gray-500 uppercase tracking-widest mt-2">Languages Mastered</div>
             </div>
             <div>
-                <div class="text-3xl font-black text-white">50+</div>
-                <div class="text-[10px] text-gray-500 uppercase tracking-widest mt-1">Architectures Built</div>
+                <div class="text-4xl font-black text-white text-cyber-gold">7+ REG</div>
+                <div class="text-[10px] text-gray-500 uppercase tracking-widest mt-2">Elite Credentials</div>
             </div>
         </section>
 
-        <section class="space-y-4">
-            <div class="text-center">
-                <h2 class="text-xs uppercase font-bold tracking-widest text-premium-gold">Validated Domain Knowledge</h2>
+        <section id="core-matrix" class="space-y-8">
+            <div class="space-y-2">
+                <span class="text-xs font-mono font-bold text-cyber-neonGreen uppercase tracking-widest">// PILLARS OF DOMAIN EXPERTISE</span>
+                <h2 class="text-2xl sm:text-3xl font-black text-white">Advanced Technology Sub-Systems</h2>
             </div>
-            <div class="flex gap-4 overflow-x-auto pb-4 scrollbar-none snap-x px-2">
-                <div class="snap-center shrink-0 w-44 bg-premium-card p-4 rounded-xl border border-gray-900 text-center">
-                    <div class="text-xl mb-1">📜</div>
-                    <div class="font-bold text-xs text-white">AWS Solutions</div>
-                    <div class="text-[10px] text-gray-500 mt-0.5">Cloud Architect</div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-cyber-panel p-6 rounded border border-cyber-border cyber-panel-glow space-y-4">
+                    <div class="w-10 h-10 rounded bg-purple-950/40 border border-purple-500/30 flex items-center justify-center text-purple-400 font-mono text-sm font-bold">AI</div>
+                    <h3 class="text-lg font-bold text-white font-mono">Artificial Intelligence Core</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed font-mono">Designing high-throughput vector embedding models, tensor compilation graphs, neural weight fine-tuning structures, and dynamic automated text agent frameworks.</p>
+                    <div class="flex flex-wrap gap-2 text-[10px] font-mono text-purple-400"><span class="bg-cyber-bg px-2 py-1 rounded">Python</span><span class="bg-cyber-bg px-2 py-1 rounded">PyTorch</span><span class="bg-cyber-bg px-2 py-1 rounded">Transformers</span></div>
                 </div>
-                <div class="snap-center shrink-0 w-44 bg-premium-card p-4 rounded-xl border border-gray-900 text-center">
-                    <div class="text-xl mb-1">📜</div>
-                    <div class="font-bold text-xs text-white">Zend Systems</div>
-                    <div class="text-[10px] text-gray-500 mt-0.5">PHP Enterprise</div>
+
+                <div class="bg-cyber-panel p-6 rounded border border-cyber-border cyber-panel-glow space-y-4">
+                    <div class="w-10 h-10 rounded bg-blue-950/40 border border-cyber-neonBlue/30 flex items-center justify-center text-cyber-neonBlue font-mono text-sm font-bold">SYS</div>
+                    <h3 class="text-lg font-bold text-white font-mono">Advanced Architecture Logic</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed font-mono">Assembling highly persistent asynchronous full-stack microservices, robust object-relational multi-tenant relational schemas, and memory-safe enterprise solutions.</p>
+                    <div class="flex flex-wrap gap-2 text-[10px] font-mono text-cyber-neonBlue"><span class="bg-cyber-bg px-2 py-1 rounded">Node.js</span><span class="bg-cyber-bg px-2 py-1 rounded">PHP Enterprise</span><span class="bg-cyber-bg px-2 py-1 rounded">Go / Rust</span></div>
                 </div>
-                <div class="snap-center shrink-0 w-44 bg-premium-card p-4 rounded-xl border border-gray-900 text-center">
-                    <div class="text-xl mb-1">📜</div>
-                    <div class="font-bold text-xs text-white">Oracle Java</div>
-                    <div class="text-[10px] text-gray-500 mt-0.5">Professional SE</div>
+
+                <div class="bg-cyber-panel p-6 rounded border border-cyber-border cyber-panel-glow space-y-4">
+                    <div class="w-10 h-10 rounded bg-emerald-950/40 border border-cyber-neonGreen/30 flex items-center justify-center text-cyber-neonGreen font-mono text-sm font-bold">SEC</div>
+                    <h3 class="text-lg font-bold text-white font-mono">Vulnerability Research</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed font-mono">Conducting advanced runtime memory assessments, reverse engineering compiled binaries, exploiting missing input validation arrays, and setting structural defensive mitigation firewalls.</p>
+                    <div class="flex flex-wrap gap-2 text-[10px] font-mono text-cyber-neonGreen"><span class="bg-cyber-bg px-2 py-1 rounded">Assembly</span><span class="bg-cyber-bg px-2 py-1 rounded">Buffer Remediation</span><span class="bg-cyber-bg px-2 py-1 rounded">Linux Kernel</span></div>
                 </div>
-                <div class="snap-center shrink-0 w-44 bg-premium-card p-4 rounded-xl border border-gray-900 text-center">
-                    <div class="text-xl mb-1">📜</div>
-                    <div class="font-bold text-xs text-white">Google Cloud</div>
-                    <div class="text-[10px] text-gray-500 mt-0.5">DevOps Engineer</div>
+            </div>
+        </section>
+
+        <section class="space-y-6">
+            <div class="space-y-2">
+                <span class="text-xs font-mono font-bold text-cyber-gold uppercase tracking-widest">// SECURE ROOT CERTIFICATE AUTHORITY REGISTRY</span>
+                <h2 class="text-2xl sm:text-3xl font-black text-white">Elite Professional Validations</h2>
+            </div>
+            
+            <div class="flex gap-4 overflow-x-auto pb-4 no-scrollbar snap-x px-2">
+                <div class="snap-center shrink-0 w-56 bg-cyber-panel p-5 rounded border border-cyber-border text-center flex flex-col justify-between">
+                    <div class="text-red-500 font-mono text-xl font-bold tracking-tighter mb-2">OSCP</div>
+                    <div class="font-bold text-xs text-white font-mono">Offensive Security Certified Professional</div>
+                    <div class="text-[9px] text-gray-500 mt-2 uppercase font-mono tracking-wider">ID: SEC-89210</div>
+                </div>
+                <div class="snap-center shrink-0 w-56 bg-cyber-panel p-5 rounded border border-cyber-border text-center flex flex-col justify-between">
+                    <div class="text-cyber-neonBlue font-mono text-xl font-bold tracking-tighter mb-2">AWS-SAA</div>
+                    <div class="font-bold text-xs text-white font-mono">AWS Solutions Architect Professional</div>
+                    <div class="text-[9px] text-gray-500 mt-2 uppercase font-mono tracking-wider">ID: AWS-99411</div>
+                </div>
+                <div class="snap-center shrink-0 w-56 bg-cyber-panel p-5 rounded border border-cyber-border text-center flex flex-col justify-between">
+                    <div class="text-purple-400 font-mono text-xl font-bold tracking-tighter mb-2">CEH_PRM</div>
+                    <div class="font-bold text-xs text-white font-mono">Certified Ethical Hacker Master</div>
+                    <div class="text-[9px] text-gray-500 mt-2 uppercase font-mono tracking-wider">ID: ECC-00392</div>
+                </div>
+                <div class="snap-center shrink-0 w-56 bg-cyber-panel p-5 rounded border border-cyber-border text-center flex flex-col justify-between">
+                    <div class="text-cyber-neonGreen font-mono text-xl font-bold tracking-tighter mb-2">ZEND-PHP</div>
+                    <div class="font-bold text-xs text-white font-mono">Zend Certified PHP Software Architect</div>
+                    <div class="text-[9px] text-gray-500 mt-2 uppercase font-mono tracking-wider">ID: ZEND-7731</div>
+                </div>
+                <div class="snap-center shrink-0 w-56 bg-cyber-panel p-5 rounded border border-cyber-border text-center flex flex-col justify-between">
+                    <div class="text-cyber-gold font-mono text-xl font-bold tracking-tighter mb-2">ORACLE_J</div>
+                    <div class="font-bold text-xs text-white font-mono">Oracle Certified Professional Java SE</div>
+                    <div class="text-[9px] text-gray-500 mt-2 uppercase font-mono tracking-wider">ID: ORCL-88401</div>
+                </div>
+                <div class="snap-center shrink-0 w-56 bg-cyber-panel p-5 rounded border border-cyber-border text-center flex flex-col justify-between">
+                    <div class="text-indigo-400 font-mono text-xl font-bold tracking-tighter mb-2">GCP-DEV</div>
+                    <div class="font-bold text-xs text-white font-mono">Google Cloud Professional DevOps</div>
+                    <div class="text-[9px] text-gray-500 mt-2 uppercase font-mono tracking-wider">ID: GCP-33821</div>
+                </div>
+                <div class="snap-center shrink-0 w-56 bg-cyber-panel p-5 rounded border border-cyber-border text-center flex flex-col justify-between">
+                    <div class="text-teal-400 font-mono text-xl font-bold tracking-tighter mb-2">CISSP</div>
+                    <div class="font-bold text-xs text-white font-mono">Information Systems Security Professional</div>
+                    <div class="text-[9px] text-gray-500 mt-2 uppercase font-mono tracking-wider">ID: ISC2-0193</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="space-y-6">
+            <div class="space-y-2">
+                <span class="text-xs font-mono font-bold text-cyber-neonBlue uppercase tracking-widest">// DEPLOYED CASE INTELLIGENCE COMPILATIONS</span>
+                <h2 class="text-2xl sm:text-3xl font-black text-white">Complex Structural Implementations</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="interactive-node relative bg-cyber-panel rounded p-6 border border-cyber-border overflow-hidden group">
+                    <div class="absolute inset-0 spotlight-effect opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                    <div class="relative z-10 space-y-4">
+                        <div class="flex justify-between items-center text-xs font-mono">
+                            <span class="text-cyber-neonGreen">[DEPLOYMENT_01]</span>
+                            <span class="text-gray-500">SYSTEM ARCHITECTURE</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white font-mono group-hover:text-cyber-neonGreen transition">ViserBank Financial Core Infrastructure</h3>
+                        <p class="text-xs text-gray-400 font-mono leading-relaxed">Integrated a comprehensive local multi-currency banking partition environment utilizing a secure MySQL backend router. Enhanced application stability by implementing parameterized request filtering structures to block injection vulnerabilities entirely.</p>
+                    </div>
+                </div>
+
+                <div class="interactive-node relative bg-cyber-panel rounded p-6 border border-cyber-border overflow-hidden group">
+                    <div class="absolute inset-0 spotlight-effect opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                    <div class="relative z-10 space-y-4">
+                        <div class="flex justify-between items-center text-xs font-mono">
+                            <span class="text-cyber-neonBlue">[DEPLOYMENT_02]</span>
+                            <span class="text-gray-500">NEURAL INTELLIGENCE</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white font-mono group-hover:text-cyber-neonBlue transition">Biometric Canvas Liveness Node</h3>
+                        <p class="text-xs text-gray-400 font-mono leading-relaxed">Assembled a web-based client-side identification gateway utilizing model shard streaming matrices. Configured the canvas buffer engine to accurately unpack model arrays and execute anti-spoof structural validation in real-time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <section class="border-t border-cyber-border bg-[#05081a] py-20 px-6">
+        <div class="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12">
+            <div class="space-y-4 font-mono">
+                <h3 class="text-2xl font-black text-white tracking-tight">Initialize Secure Session</h3>
+                <p class="text-xs text-gray-400 leading-relaxed">
+                    Ready to scale your technical operation, integrate automated neural network pipelines, or evaluate critical digital assets? Reach out directly via encrypted gateway sockets.
+                </p>
+                <div class="text-[11px] text-cyber-neonBlue space-y-1 pt-2">
+                    <p>✉️ PRIMARY: <a href="mailto:kelvinessien27@gmail.com" class="underline hover:text-cyber-neonGreen">kelvinessien27@gmail.com</a></p>
+                    <p>🌐 SCHEDULER: REMOTE ACTIVE CONTROLLER</p>
+                </div>
+            </div>
+
+            <div class="lg:col-span-2">
+                <form class="space-y-4 font-mono text-xs" onsubmit="event.preventDefault(); alert('Handshake parameter logged. System active.');">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block uppercase tracking-wider text-gray-500 mb-1.5 font-bold">CLIENT_IDENTITY</label>
+                            <input type="text" required placeholder="e.g. Chief Technical Officer" 
+                                   class="w-full bg-cyber-bg border border-cyber-border rounded p-3 text-white focus:outline-none focus:border-cyber-neonGreen transition">
+                        </div>
+                        <div>
+                            <label class="block uppercase tracking-wider text-gray-500 mb-1.5 font-bold">ROUTING_EMAIL</label>
+                            <input type="email" required placeholder="director@organization.com" 
+                                   class="w-full bg-cyber-bg border border-cyber-border rounded p-3 text-white focus:outline-none focus:border-cyber-neonGreen transition">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block uppercase tracking-wider text-gray-500 mb-1.5 font-bold">PROJECT_SCOPE_SPECIFICATIONS</label>
+                        <textarea rows="4" required placeholder="Identify infrastructure bottlenecks, database clusters constraints, or model parameters required..." 
+                                  class="w-full bg-cyber-bg border border-cyber-border rounded p-3 text-white focus:outline-none focus:border-cyber-neonGreen transition"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-cyber-panel border border-cyber-neonBlue text-cyber-neonBlue hover:bg-cyber-neonBlue hover:text-black font-black py-4 rounded uppercase tracking-widest transition duration-300">
+                        TRANSMIT_SECURE_HANDSHAKE
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black/60 py-8 text-center text-[10px] text-gray-600 font-mono border-t border-black">
+        <p>&copy; 2026 KELVIN EKPE ESSIEN // SINGLE_FILE_CORE_ENGINE_ACTIVE</p>
+    </footer>
+
+    <script>
+        // Initialize GSAP & ScrollTrigger Hooks
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Immersive staggered hero intro sequencing
+        gsap.from(".reveal-node", {
+            opacity: 0,
+            y: 35,
+            stagger: 0.12,
+            duration: 1.4,
+            ease: "power4.out"
+        });
+
+        // Sophisticated scroll animation reveal configuration for nodes
+        gsap.from(".interactive-node", {
+            scrollTrigger: {
+                trigger: ".interactive-node",
+                start: "top 85%"
+            },
+            opacity: 0,
+            y: 50,
+            duration: 1.2,
+            stagger: 0.2,
+            ease: "power3.out"
+        });
+
+        // Multi-pointer dynamic background glowing cursor tracker
+        document.querySelectorAll('.interactive-node').forEach(node => {
+            const updatePointer = (e) => {
+                const boundary = node.getBoundingClientRect();
+                const pointerX = e.touches ? e.touches[0].clientX : e.clientX;
+                const pointerY = e.touches ? e.touches[0].clientY : e.clientY;
+                
+                node.style.setProperty('--mouse-x', `${pointerX - boundary.left}px`);
+                node.style.setProperty('--mouse-y', `${pointerY - boundary.top}px`);
+            };
+
+            node.addEventListener('mousemove', updatePointer);
+            node.addEventListener('touchmove', updatePointer);
+        });
+    </script>
+</body>
+    </html>                    <div class="text-[10px] text-gray-500 mt-0.5">DevOps Engineer</div>
                 </div>
                 <div class="snap-center shrink-0 w-44 bg-premium-card p-4 rounded-xl border border-gray-900 text-center">
                     <div class="text-xl mb-1">📜</div>
