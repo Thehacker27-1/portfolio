@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" style="background-color: #03050d; scroll-behavior: smooth;">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kelvin Ekpe Essien | Principal Engineer & Security Researcher</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Kelvin Ekpe Essien | Principal Systems Engineer</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     
     <script>
         tailwind.config = {
@@ -19,7 +18,6 @@
                             panel: '#090d22',
                             neonGreen: '#00ff66',
                             neonBlue: '#00bcff',
-                            gold: '#E5A93C',
                             border: '#141b3a'
                         }
                     }
@@ -28,90 +26,153 @@
         }
     </script>
     <style>
-        /* Immersive glassmorphism layer styles */
-        .cyber-panel-glow {
-            box-shadow: 0 0 25px -5px rgba(0, 188, 255, 0.05);
+        /* Strict native fallback rules to prevent default white browser rendering */
+        body {
+            background-color: #03050d !important;
+            color: #d1d5db !important;
         }
-        .spotlight-effect {
-            background: radial-gradient(800px circle at var(--mouse-x, 0px) var(--mouse-y, 0px), rgba(0, 255, 102, 0.05), transparent 40%);
+        /* Forces text container structures to align seamlessly in a single row without breaks */
+        .force-straight-line {
+            white-space: nowrap !important;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
-        /* Custom scrollbar elimination for native sliding viewports */
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
 </head>
-<body class="bg-cyber-bg text-gray-200 font-sans antialiased selection:bg-cyber-neonGreen selection:text-black overflow-x-hidden">
+<body class="bg-cyber-bg text-gray-300 font-sans antialiased overflow-x-hidden">
 
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[800px] bg-[radial-gradient(circle_at_center,rgba(0,188,255,0.06),transparent_65%)] pointer-events-none z-0"></div>
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[500px] bg-[radial-gradient(circle_at_center,rgba(0,188,255,0.05),transparent_65%)] pointer-events-none z-0"></div>
 
-    <header class="sticky top-0 z-50 bg-cyber-bg/70 backdrop-blur-2xl border-b border-cyber-border/60">
-        <div class="max-w-6xl mx-auto px-6 h-24 flex items-center justify-between">
+    <header class="sticky top-0 z-50 bg-[#03050d]/80 backdrop-blur-2xl border-b border-cyber-border/40">
+        <div class="max-w-5xl mx-auto px-4 h-20 flex items-center justify-between">
             <div class="flex flex-col">
-                <span class="text-lg font-black tracking-widest text-white">ESSIEN<span class="text-cyber-neonGreen">_SEC</span></span>
-                <span class="text-[9px] font-mono text-gray-500 tracking-wider">LOC: 0x7F000001 // CALABAR_NGR</span>
+                <span class="text-base font-black tracking-widest text-white">ESSIEN<span class="text-cyber-neonGreen">_SEC</span></span>
             </div>
-            <div class="flex items-center gap-4">
-                <span class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-mono bg-emerald-950/40 border border-emerald-500/30 text-emerald-400">
-                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> SYSTEM_ONLINE
-                </span>
-                <a href="mailto:kelvinessien27@gmail.com" class="text-xs font-mono font-bold bg-cyber-panel border border-cyber-border px-4 py-2.5 rounded text-cyber-neonBlue hover:border-cyber-neonGreen transition duration-300">
-                    CONNECT_
-                </a>
-            </div>
+            <span class="text-[9px] font-mono bg-cyber-panel border border-cyber-border px-2.5 py-1 rounded text-cyber-neonBlue tracking-widest">
+                AGE:25 // 10_YR_PRO
+            </span>
         </div>
     </header>
 
-    <section class="relative min-h-[90vh] flex items-center px-6 z-10">
-        <div class="max-w-4xl mx-auto w-full space-y-8">
-            <div class="space-y-4">
-                <div class="reveal-node inline-flex items-center gap-2 px-3 py-1 bg-blue-950/30 border border-cyber-neonBlue/30 rounded text-[10px] text-cyber-neonBlue font-mono tracking-widest uppercase">
-                    ⚡ ARCHITECT // RESEARCHER // PRODIGY AT 25
-                </div>
-                <h1 class="reveal-node text-5xl sm:text-7xl lg:text-8xl font-black tracking-tighter text-white leading-none">
+    <section class="relative min-h-[65vh] flex items-center px-4 z-10">
+        <div class="max-w-4xl mx-auto w-full space-y-4">
+            
+            <div>
+                <span class="inline-block px-2 py-0.5 bg-blue-950/40 border border-cyber-neonBlue/30 rounded text-[9px] font-mono text-cyber-neonBlue tracking-widest uppercase">
+                    ⚡ CORE CORE_SYSTEMS_ARCHITECT
+                </span>
+            </div>
+
+            <div class="w-full overflow-hidden">
+                <h1 class="reveal-text text-3xl sm:text-5xl lg:text-7xl font-black tracking-tighter text-white uppercase force-straight-line">
                     Kelvin Ekpe Essien
                 </h1>
-                <p class="reveal-node text-xl sm:text-2xl font-bold font-mono tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyber-neonGreen via-cyber-neonBlue to-purple-400">
-                    Advanced AI Developer & Elite Security Engineer
+            </div>
+
+            <div class="w-full overflow-hidden">
+                <p class="reveal-text text-xs sm:text-sm lg:text-lg font-mono font-bold tracking-tight text-cyber-neonGreen uppercase force-straight-line">
+                    Advanced AI Developer & Elite Security Engineer // Prodigy Frameworks
                 </p>
             </div>
 
-            <p class="reveal-node text-gray-400 max-w-2xl text-sm sm:text-base leading-relaxed font-mono">
-                A 25-year-old software vanguard who began building core system logic at age 15. A decade of deep domain engineering specializing in high-concurrency cloud arrays, artificial intelligence data modeling, and low-level kernel vulnerability analysis.
-            </p>
+            <div class="w-full overflow-hidden border-t border-cyber-border/40 pt-3">
+                <p class="reveal-text text-[10px] sm:text-xs font-mono text-gray-400 tracking-tight force-straight-line">
+                    Languages: Python • PyTorch • Node.js • PHP Enterprise • Assembly • Go • Linux Kernel Development
+                </p>
+            </div>
 
-            <div class="reveal-node pt-4 flex flex-wrap gap-4 font-mono text-xs">
-                <a href="#core-matrix" class="px-6 py-4 bg-cyber-neonGreen text-black font-black uppercase tracking-wider rounded shadow-lg shadow-emerald-500/10 hover:bg-emerald-400 transition">
-                    Analyze Capabilities Matrix
+            <div class="reveal-text pt-2 flex gap-3 font-mono text-[10px]">
+                <a href="mailto:kelvinessien27@gmail.com" class="px-4 py-2.5 bg-cyber-neonGreen text-black font-black uppercase tracking-wider rounded transition hover:bg-emerald-400">
+                    SECURE_SOCKET_MAIL
                 </a>
-                <a href="mailto:kelvinessien27@gmail.com" class="px-6 py-4 bg-cyber-panel border border-cyber-border text-white font-bold rounded hover:bg-gray-900 transition">
-                    Request Secure Consultation
+                <a href="#credentials" class="px-4 py-2.5 bg-cyber-panel border border-cyber-border text-white font-bold rounded transition hover:bg-gray-900">
+                    VIEW_REGISTRY
                 </a>
             </div>
+
         </div>
     </section>
 
-    <main class="max-w-6xl mx-auto px-6 space-y-36 pb-32 relative z-10">
+    <main id="credentials" class="max-w-4xl mx-auto px-4 space-y-16 pb-24 relative z-10">
 
-        <section class="grid grid-cols-2 md:grid-cols-4 gap-6 border-y border-cyber-border py-12 text-center font-mono">
-            <div>
-                <div class="text-4xl font-black text-white text-cyber-neonGreen">10 Yrs</div>
-                <div class="text-[10px] text-gray-500 uppercase tracking-widest mt-2">Active Engineering</div>
+        <div class="space-y-3">
+            <div class="text-xs font-mono text-gray-500 uppercase tracking-widest">// VALIDATED_CREDENTIAL_AUTHORITY</div>
+            <div class="flex gap-3 overflow-x-auto pb-2 no-scrollbar snap-x">
+                <div class="snap-center shrink-0 w-40 bg-cyber-panel p-3.5 rounded border border-cyber-border text-center">
+                    <div class="text-red-500 font-mono text-sm font-bold tracking-tighter">OSCP</div>
+                    <div class="text-[9px] font-bold text-white font-mono mt-1 force-straight-line">Offensive Security Pro</div>
+                </div>
+                <div class="snap-center shrink-0 w-40 bg-cyber-panel p-3.5 rounded border border-cyber-border text-center">
+                    <div class="text-cyber-neonBlue font-mono text-sm font-bold tracking-tighter">AWS-SAA</div>
+                    <div class="text-[9px] font-bold text-white font-mono mt-1 force-straight-line">Cloud Architect Pro</div>
+                </div>
+                <div class="snap-center shrink-0 w-40 bg-cyber-panel p-3.5 rounded border border-cyber-border text-center">
+                    <div class="text-purple-400 font-mono text-sm font-bold tracking-tighter">CEH_MASTER</div>
+                    <div class="text-[9px] font-bold text-white font-mono mt-1 force-straight-line">Certified Ethical Hacker</div>
+                </div>
+                <div class="snap-center shrink-0 w-40 bg-cyber-panel p-3.5 rounded border border-cyber-border text-center">
+                    <div class="text-cyber-neonGreen font-mono text-sm font-bold tracking-tighter">ZEND-PHP</div>
+                    <div class="text-[9px] font-bold text-white font-mono mt-1 force-straight-line">Zend Software Architect</div>
+                </div>
             </div>
-            <div>
-                <div class="text-4xl font-black text-white text-cyber-neonBlue">AGE_25</div>
-                <div class="text-[10px] text-gray-500 uppercase tracking-widest mt-2">Prodigy Track Timeline</div>
-            </div>
-            <div>
-                <div class="text-4xl font-black text-white text-purple-400">8+ CORE</div>
-                <div class="text-[10px] text-gray-500 uppercase tracking-widest mt-2">Languages Mastered</div>
-            </div>
-            <div>
-                <div class="text-4xl font-black text-white text-cyber-gold">7+ REG</div>
-                <div class="text-[10px] text-gray-500 uppercase tracking-widest mt-2">Elite Credentials</div>
-            </div>
-        </section>
+        </div>
 
-        <section id="core-matrix" class="space-y-8">
+        <div class="space-y-4">
+            <div class="text-xs font-mono text-cyber-neonBlue uppercase tracking-widest">// PRODUCTION_CASE_INTELLIGENCE</div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                
+                <div class="bg-cyber-panel rounded p-4 border border-cyber-border space-y-2">
+                    <div class="flex justify-between text-[9px] font-mono text-cyber-neonGreen"><span>[CASE_01]</span><span>FINANCIAL_CORE</span></div>
+                    <h3 class="text-sm font-bold text-white font-mono force-straight-line">ViserBank Operations Pipeline</h3>
+                    <p class="text-[11px] text-gray-400 font-mono leading-relaxed">Integrated dynamic multi-currency banking system architectures onto local virtual hosting partitions, managing clean state logic loops.</p>
+                </div>
+
+                <div class="bg-cyber-panel rounded p-4 border border-cyber-border space-y-2">
+                    <div class="flex justify-between text-[9px] font-mono text-cyber-neonBlue"><span>[CASE_02]</span><span>BIOMETRIC_NODE</span></div>
+                    <h3 class="text-sm font-bold text-white font-mono force-straight-line">Biometric Canvas Tracking Node</h3>
+                    <p class="text-[11px] text-gray-400 font-mono leading-relaxed">Constructed client-side identification routines reading remote neural network verification models directly through dynamic viewports.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <section class="border-t border-cyber-border bg-[#05081a] py-12 px-4">
+        <div class="max-w-4xl mx-auto space-y-4 font-mono text-xs">
+            <div class="space-y-1">
+                <h3 class="text-base font-black text-white">Initialize Secure Handshake</h3>
+                <p class="text-[10px] text-gray-400 force-straight-line">Primary Matrix Access Node Vector: kelvinessien27@gmail.com</p>
+            </div>
+            <form class="space-y-3" onsubmit="event.preventDefault(); alert('Transmission logged successfully.');">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <input type="text" required placeholder="IDENTITY_PARAMETER" class="bg-cyber-bg border border-cyber-border rounded p-2.5 text-white focus:outline-none focus:border-cyber-neonGreen">
+                    <input type="email" required placeholder="ROUTING_CHANNEL_EMAIL" class="bg-cyber-bg border border-cyber-border rounded p-2.5 text-white focus:outline-none focus:border-cyber-neonGreen">
+                </div>
+                <button type="submit" class="w-full bg-cyber-panel border border-cyber-neonBlue text-cyber-neonBlue font-bold py-2.5 rounded uppercase tracking-widest text-[10px] hover:bg-cyber-neonBlue hover:text-black transition duration-200">
+                    TRANSMIT_DATA_STREAM
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-black py-4 text-center text-[9px] text-gray-600 font-mono">
+        <p>KELVIN EKPE ESSIEN &bull; PRODUCTION STREAM STABLE // 2026</p>
+    </footer>
+
+    <script>
+        gsap.from(".reveal-text", {
+            opacity: 0,
+            y: 20,
+            stagger: 0.1,
+            duration: 1,
+            ease: "power3.out"
+        });
+    </script>
+</body>
+    </html>        <section id="core-matrix" class="space-y-8">
             <div class="space-y-2">
                 <span class="text-xs font-mono font-bold text-cyber-neonGreen uppercase tracking-widest">// PILLARS OF DOMAIN EXPERTISE</span>
                 <h2 class="text-2xl sm:text-3xl font-black text-white">Advanced Technology Sub-Systems</h2>
